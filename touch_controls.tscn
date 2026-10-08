@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://dh3uwqsjr7t6s"]
+
+[ext_resource type="Texture2D" uid="uid://bx5lprqgmkf1n" path="res://gui/touch_button_jump.png" id="1_qpxdh"]
+[ext_resource type="Script" uid="uid://c5a1krlnxww5n" path="res://player/touch_button.gd" id="2_rq6v7"]
+[ext_resource type="Texture2D" uid="uid://82mnw4u87u87" path="res://gui/touch_button_right.png" id="3_gv3ke"]
+[ext_resource type="Texture2D" uid="uid://bwexvk7mhejjn" path="res://gui/touch_button_left.png" id="4_5se0o"]
+[ext_resource type="Texture2D" uid="uid://d0lv8kvrb5rcm" path="res://gui/flecha abajo.png" id="5_a8tu2"]
+
+[node name="TouchControls" type="CanvasLayer" unique_id=1351327736]
+
+[node name="TextureButtonArr" type="TextureButton" parent="." unique_id=897920863]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -292.0
+offset_top = -260.0
+offset_right = 962.0
+offset_bottom = 994.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("1_qpxdh")
+stretch_mode = 5
+script = ExtResource("2_rq6v7")
+action = "jump"
+
+[node name="TextureButtonDer" type="TextureButton" parent="." unique_id=1931341645]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 586.0
+offset_top = -163.0
+offset_right = 1840.0
+offset_bottom = 1091.0
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("3_gv3ke")
+stretch_mode = 5
+script = ExtResource("2_rq6v7")
+action = "move_right"
+
+[node name="TextureButtonIzq" type="TextureButton" parent="." unique_id=975388466]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 409.0
+offset_top = -163.0
+offset_right = 1663.0
+offset_bottom = 1091.0
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("4_5se0o")
+script = ExtResource("2_rq6v7")
+action = "move_left"
+
+[node name="TextureButtonAba" type="TextureButton" parent="." unique_id=1782900428]
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -304.0
+offset_top = -165.0
+offset_right = 950.0
+offset_bottom = 1089.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("5_a8tu2")
+stretch_mode = 5
+script = ExtResource("2_rq6v7")
+action = "shoot"
