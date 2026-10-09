@@ -1,32 +1,47 @@
-# Set default behavior to handle text files with auto LF normalization
+# Configuracion de finales de linea
+
 * text=auto
 
-# Archivos de texto de Godot (normalizar saltos de línea a LF)
+# Escenas y recursos de Godot: texto con finales LF
+
 *.tscn text eol=lf
 *.tres text eol=lf
 *.gd text eol=lf
 *.godot text eol=lf
 *.uid text eol=lf
 *.cfg text eol=lf
+*.gdshader text eol=lf
+*.shader text eol=lf
 
-# Archivos de importación y binarios de Godot
-*.import binary
+# Archivos de importacion y recursos binarios de Godot
+
+*.import text eol=lf
 *.scn binary
 *.res binary
 
-# Archivos multimedia, fuentes y 3D
+# Imagenes
+
 *.png binary
 *.jpg binary
 *.jpeg binary
 *.webp binary
 *.svg binary
+
+# Audio
+
 *.ogg binary
 *.wav binary
 *.mp3 binary
+
+# Fuentes
+
 *.ttf binary
 *.otf binary
 *.woff binary
 *.woff2 binary
+
+# Modelos 3D
+
 *.glb binary
 *.gltf binary
 *.blend binary
