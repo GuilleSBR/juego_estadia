@@ -1,0 +1,23 @@
+# Cache e importaciones locales de Godot 4
+.godot/
+
+# Archivos de exportación con datos sensibles (opcional)
+# export_presets.cfg
+
+# Archivos de Godot 3 (por si acaso)
+.import/
+
+# Archivos de Mono / C#
+.mono/
+data_*/
+mono_project/
+
+# Archivos temporales y de editor
+.vs/
+.idea/
+.vscode/
+*.tmp
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
